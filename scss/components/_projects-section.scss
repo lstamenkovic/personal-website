@@ -39,6 +39,15 @@
     font-size: 1.7rem;
     font-weight: 800;
     // letter-spacing: 0.5px;
+    a {
+      color: var(--black);
+      border-bottom: 2px solid var(--black);
+
+      &:hover {
+        color: var(--white);
+        border-bottom: 2px solid var(--white);
+      }
+    }
   }
 
   div {
@@ -53,15 +62,5 @@
   span,
   h4 {
     text-align: left;
-  }
-
-  a {
-    color: var(--black);
-    border-bottom: 2px solid var(--black);
-
-    &:hover {
-      color: var(--white);
-      border-bottom: 2px solid var(--white);
-    }
   }
 }

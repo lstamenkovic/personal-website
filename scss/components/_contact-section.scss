@@ -9,13 +9,20 @@
   h3 {
     font-size: 1.5rem;
     margin: 35px auto;
+
+    a {
+      color: var(--white);
+      &:hover {
+        color: var(--purple);
+      }
+    }
   }
 
   & h3:nth-child(5) {
     font-size: 1.4rem;
     font-weight: 200;
     width: 300px;
-    border-bottom: 2px solid var(--white);
+    // border-bottom: 2px solid var(--white);
   }
 }
 

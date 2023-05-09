@@ -1,368 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>L.Stamenkovic</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/shorthandcss@1.1.1/dist/shorthand.min.css"
+    />
+  </head>
 
-<head>
-  <title>L.Stamenkovic</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/shorthandcss@1.1.1/dist/shorthand.min.css" />
-</head>
-
-<body>
-  <header>
-    <span class="hero_banner small">
-      <span>L.STAMENKOVIC</span>
-      <br />
-      <span>WEB DEVELOPER</span>
-    </span>
-    <span class="hero_banner big">
-      <span>LAZAR STAMENKOVIC</span>
-      <br />
-      <span>WEB DEVELOPER</span>
-    </span>
-  </header>
-  <div id="ham_button" class="ham4 text-white" onclick="hamAnimate4f(this)">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <div id="mobile_nav" class="overlay text-white">
-    <ul class="nav_main">
-      <li><a href="#about" onclick="closeMobileNav()">About</a></li>
-      <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
-      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
-    </ul>
-  </div>
-  <nav id="navbar">
-    <a href="#">
-      <svg class="logo" width="40" height="40">
-        <rect x="0" y="0" rx="0" ry="0" width="100%" height="100%" style="fill: #bd93f9; stroke: #bd93f9" />
-        <rect x="32%" y="14%" rx="0" ry="0" width="9%" height="67%" style="fill: #282a36; stroke: #282a36" />
-        <rect x="22%" y="14%" rx="0" ry="0" width="29%" height="6%" style="fill: #282a36; stroke: #282a36" />
-        <rect x="75%" y="68%" rx="0" ry="0" width="6%" height="19%" style="fill: #282a36; stroke: #282a36" />
-        <rect x="22%" y="81%" rx="0" ry="0" width="59%" height="6%" style="fill: #282a36; stroke: #282a36" />
-      </svg></a>
-    <ul>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-    <div></div>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2 class="section_headings text-purple">
-        About me
-        <b class="hr purple border_like"></b>
-      </h2>
-
-      <p class="text-purple">
-        <img src="images/mugshot.png" alt="" width="250" />
-        <span class="info">
-          Hi, I'm Lazar Stamenkovic, web developer form Europe. I like to
-          apply the "Less is more" philosophy in my work. Dark mode, open
-          source and DIY are the way to go.
-          <br /><br />
-          Other than coding, I spend most of my time watching movies,
-          listening to music, reading or riding my bike.
-        </span>
-      </p>
-      <h2 class="section_headings section_headings_margin text-purple">
-        Skills <b class="hr purple border_like"></b>
-      </h2>
-      <div class="text-white icon_grid container">
-        <span class="icons">
-          <b class="nf nf-dev-html5 hvr-grow"></b>
-          <span>HTML</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-css3 hvr-grow"></b>
-          <span>CSS</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-javascript_badge hvr-grow"></b>
-          <span>JavaScript</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-md-vuejs hvr-grow"></b>
-          <span>Vue.js</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-sass hvr-grow"></b>
-          <span>Sass</span>
-        </span>
-
-        <span class="icons">
-          <b class="ti ti-brand-bootstrap hvr-grow"></b>
-          <span>Bootstrap</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-responsive hvr-grow"></b>
-          <span>Responsive<br />design</span>
-        </span>
-      </div>
-      <h2 class="section_headings section_headings_margin text-purple">
-        Toolbox <b class="hr purple border_like"></b>
-      </h2>
-      <div class="text-white icon_grid container">
-        <span class="icons">
-          <b class="ti ti-brand-vite hvr-grow"></b>
-          <span>Vite</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-photoshop hvr-grow"></b>
-          <span>Photoshop</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-git hvr-grow"></b>
-          <span>Git</span>
-        </span>
-
-        <span class="icons">
-          <div class="gnu-linux hvr-grow">
-            <b class="nf nf-dev-gnu"></b>
-            <b class="plus">+</b>
-            <b class="nf nf-dev-linux"></b>
-          </div>
-          <span>GNU/Linux</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-vim hvr-grow"></b>
-          <span>Vim</span>
-        </span>
-
-        <span class="icons">
-          <b class="nf nf-dev-terminal_badge hvr-grow"></b>
-          <span>CLI</span>
-        </span>
-      </div>
-    </section>
-    <section id="projects" class="purple-separator">
-      <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep3" viewBox="0 0 1600 100"
-        style="display: block" data-height="100">
-        <path class="first" style="opacity: 1"
-          d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z">
-        </path>
-        <path class="second" style="opacity: 1"
-          d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z">
-        </path>
-        <path class="third" style=""
-          d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z">
-        </path>
-      </svg>
-
-      <h2 class="section_headings text-black">
-        Projects
-        <b class="hr black border_like"></b>
-      </h2>
-      <div class="projects-container">
-        <div class="project text-white">
-          <img src="images/starfetch.png" alt="" />
-          <div>
-            <h4 class="title">STARFETCH</h4>
-            <span class="desc">
-              Single-page app that draws a random constellation on a click of
-              a button. User can also browse a list of available
-              constellations.
-            </span>
-            <span class="made_with">
-              MADE WITH <br />
-              <b class="nf nf-md-vuejs"></b>
-            </span>
-            <span class="buttons">
-              <a href="https://lstamenkovic.github.io/Starfetch-VueJS/" target="_blank">LIVE SITE</a>
-              |
-              <a href="https://codeberg.org/lstamenkovic/starfetch" target="_blank">SOURCE CODE</a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects-container">
-        <div class="project text-white">
-          <img src="images/bluetube.png" alt="" />
-          <div>
-            <h4 class="title">BLUETUBE</h4>
-            <span class="desc">
-              Responsive receration of the YouTube's landing page
-            </span>
-            <span class="made_with">
-              MADE WITH <br />
-              <b class="nf nf-dev-html5"></b>
-              <b class="nf nf-dev-css3"></b>
-              <b class="nf nf-dev-javascript"></b>
-            </span>
-            <span class="buttons">
-              <a href="https://lstamenkovic.codeberg.page/bluetube" target="_blank">LIVE SITE</a>
-              |
-              <a href="https://codeberg.org/lstamenkovic/bluetube" target="_blank">SOURCE CODE</a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects-container">
-        <div class="project text-white">
-          <img src="images/portfolio.png" alt="" />
-          <div>
-            <h4 class="title">PORTFOLIO</h4>
-            <span class="desc"> Projects summary page </span>
-            <span class="made_with">
-              MADE WITH <br />
-              <b class="nf nf-dev-html5"></b>
-              <b class="nf nf-dev-css3"></b>
-            </span>
-            <span class="buttons">
-              <a href="https://lstamenkovic.codeberg.page/portfolio" target="_blank">LIVE SITE</a>
-              <span>|</span>
-              <a href="https://codeberg.org/lstamenkovic/portfolio" target="_blank">SOURCE CODE</a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects-container">
-        <div class="project text-white">
-          <img src="images/website.png" alt="" />
-          <div>
-            <h4 class="title">THIS WEBSITE</h4>
-            <span class="desc"> </span>
-            <span class="made_with">
-              MADE WITH <br />
-              <b class="nf nf-dev-html5"></b>
-              <b class="nf nf-dev-sass"></b>
-            </span>
-            <span class="buttons">
-              <a href="https://codeberg.org/lstamenkovic/personal-website" target="_blank">SOURCE CODE</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="black-separator">
-      <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep3" viewBox="0 0 1600 100"
-        style="display: block" data-height="100">
-        <path class="first" style="opacity: 1"
-          d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z">
-        </path>
-        <path class="second" style="opacity: 1"
-          d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z">
-        </path>
-        <path class="third" style=""
-          d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z">
-        </path>
-      </svg>
-      <div class="contact-section">
-        <h2 class="section_headings text-purple">Get in touch</h2>
-        <h3 class="text-purple">I'm open for hire.<span></span></h3>
-        <h3 class="text-purple">
-          If you have any questions about me or my projects.
-        </h3>
-        <h3 class="text-purple">Please send me a message</h3>
-        <h3 class="text-white">lstamenkovic13@protonmail.com</h3>
-        <span class="contact-container">
-          <a class="text-white" href="https://draculatheme.com/" target="_blank"><i class="ti ti-bat"></i></a>
-          <a class="text-white" href="https://codepen.io/lstamenkovic" target="_blank"><i
-              class="ti ti-brand-codepen"></i></a>
-          <a class="text-white" href="https://codeberg.org/lstamenkovic" target="_blank"><i
-              class="ti ti-code"></i></a>
-        </span>
-      </div>
-    </section>
-  </main>
-  <footer class="text-white">
-    <span>Designed and developed by Myself.</span>
-    <br />
-    <span class="credits" onclick="openCredits()">Special Thanks</span>
-    <div id="mentions" class="mentions">
-      <b class="nf nf-fa-close text-black" onclick="closeCredits()"></b>
-      <div class="nav_mentions text-pink">
-        <span>Made possible because of these people:</span>
-        <ul>
-          <li>
-            <a href="https://ui.draculatheme.com/" class="hvr-underline-from-center">Dracula UI by Zeno Rocha</a>
-          </li>
-          <li>
-            <a href="https://heropatterns.com/" class="hvr-underline-from-center">Hero Patterns by Steve Schoger</a>
-          </li>
-          <li>
-            <a href="https://typeof.net/Iosevka/" class="hvr-underline-from-center">Iosevka Font by Belleve Invis</a>
-          </li>
-          <li>
-            <a href="https://codepen.io/simeydotme/pen/rVqrrN" class="hvr-underline-from-center">Dashed Divider by Simon
-              Goellner</a>
-          </li>
-          <li>
-            <a href="https://codepen.io/jamestrenda/pen/WNNNvvR" class="hvr-underline-from-center">Corner Frames by
-              @jamestrenda</a>
-          </li>
-
-          <li>
-            <a href="https://www.nerdfonts.com/" class="hvr-underline-from-center">Nerd Fonts Icons by Ryan L
-              McIntyre</a>
-          </li>
-          <li>
-            <a href="https://ianlunn.github.io/Hover/" class="hvr-underline-from-center">Hover.css by Ian Lunn</a>
-          </li>
-          <li>
-            <a href="https://codepen.io/emared/pen/gWGBLR" class="hvr-underline-from-center">Row separator by
-              @emared</a>
-          </li>
-        </ul>
-      </div>
+  <body>
+    <header>
+      <span class="hero_banner small">
+        <span>L.STAMENKOVIC</span>
+        <br />
+        <span>WEB DEVELOPER</span>
+      </span>
+      <span class="hero_banner big">
+        <span>LAZAR STAMENKOVIC</span>
+        <br />
+        <span>WEB DEVELOPER</span>
+      </span>
+      <a href="#navbar" class="scroll_indicator hvr-grow"
+        ><b class="nf nf-fa-chevron_down"></b
+      ></a>
+    </header>
+    <div id="ham_button" class="ham4 text-white" onclick="hamAnimate4f(this)">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </footer>
-  <script>
-    window.onscroll = function () {
-      myFunction();
-    };
+    <div id="mobile_nav" class="overlay text-white">
+      <ul class="nav_main">
+        <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+        <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+      </ul>
+    </div>
+    <nav id="navbar">
+      <a href="#">
+        <svg class="logo" width="40" height="40">
+          <rect
+            x="0"
+            y="0"
+            rx="0"
+            ry="0"
+            width="100%"
+            height="100%"
+            style="fill: #bd93f9; stroke: #bd93f9"
+          />
+          <rect
+            x="32%"
+            y="14%"
+            rx="0"
+            ry="0"
+            width="9%"
+            height="67%"
+            style="fill: #282a36; stroke: #282a36"
+          />
+          <rect
+            x="22%"
+            y="14%"
+            rx="0"
+            ry="0"
+            width="29%"
+            height="6%"
+            style="fill: #282a36; stroke: #282a36"
+          />
+          <rect
+            x="75%"
+            y="68%"
+            rx="0"
+            ry="0"
+            width="6%"
+            height="19%"
+            style="fill: #282a36; stroke: #282a36"
+          />
+          <rect
+            x="22%"
+            y="81%"
+            rx="0"
+            ry="0"
+            width="59%"
+            height="6%"
+            style="fill: #282a36; stroke: #282a36"
+          /></svg
+      ></a>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div></div>
+    </nav>
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    <main>
+      <section id="about">
+        <h2 class="section_headings text-purple">
+          About me
+          <b class="hr purple border_like"></b>
+        </h2>
 
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
+        <p class="text-purple">
+          <img src="images/mugshot.png" alt="" width="250" />
+          <span class="info">
+            Hi, I'm Lazar Stamenkovic, web developer form Europe. I like to
+            apply the "Less is more" philosophy in my work. Dark mode, open
+            source and DIY are the way to go.
+            <br /><br />
+            Other than coding, I spend most of my time watching movies,
+            listening to music, reading or riding my bike.
+          </span>
+        </p>
+        <h2 class="section_headings section_headings_margin text-purple">
+          Skills <b class="hr purple border_like"></b>
+        </h2>
+        <div class="text-white icon_grid container">
+          <span class="icons">
+            <b class="nf nf-dev-html5"></b>
+            <span>HTML</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-css3"></b>
+            <span>CSS</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-javascript_badge"></b>
+            <span>JavaScript</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-md-vuejs"></b>
+            <span>Vue.js</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-sass"></b>
+            <span>Sass</span>
+          </span>
+
+          <span class="icons">
+            <b class="ti ti-brand-bootstrap"></b>
+            <span>Bootstrap</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-responsive"></b>
+            <span>Responsive<br />design</span>
+          </span>
+        </div>
+        <h2 class="section_headings section_headings_margin text-purple">
+          Toolbox <b class="hr purple border_like"></b>
+        </h2>
+        <div class="text-white icon_grid container">
+          <span class="icons">
+            <b class="ti ti-brand-vite"></b>
+            <span>Vite</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-photoshop"></b>
+            <span>Photoshop</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-git"></b>
+            <span>Git</span>
+          </span>
+
+          <span class="icons">
+            <div class="gnu-linux">
+              <b class="nf nf-dev-gnu"></b>
+              <b class="plus">+</b>
+              <b class="nf nf-dev-linux"></b>
+            </div>
+            <span>GNU/Linux</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-vim"></b>
+            <span>Vim</span>
+          </span>
+
+          <span class="icons">
+            <b class="nf nf-dev-terminal_badge"></b>
+            <span>CLI</span>
+          </span>
+        </div>
+      </section>
+      <section id="projects" class="purple-separator">
+        <svg
+          id=""
+          preserveAspectRatio="xMidYMax meet"
+          class="svg-separator sep3"
+          viewBox="0 0 1600 100"
+          style="display: block"
+          data-height="100"
+        >
+          <path
+            class="first"
+            style="opacity: 1"
+            d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"
+          ></path>
+          <path
+            class="second"
+            style="opacity: 1"
+            d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"
+          ></path>
+          <path
+            class="third"
+            style=""
+            d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"
+          ></path>
+        </svg>
+
+        <h2 class="section_headings text-black">
+          Projects
+          <b class="hr black border_like"></b>
+        </h2>
+        <div class="projects-container">
+          <div class="project text-white">
+            <a
+              href="https://lstamenkovic.github.io/Starfetch-VueJS/"
+              target="_blank"
+              ><img src="images/starfetch.png" alt=""
+            /></a>
+            <div>
+              <h4 class="title">STARFETCH</h4>
+              <span class="desc">
+                Single-page app that draws a random constellation on a click of
+                a button. User can also browse a list of available
+                constellations.
+              </span>
+              <span class="made_with">
+                MADE WITH <br />
+                <b class="nf nf-md-vuejs"></b>
+              </span>
+              <span class="buttons">
+                <a
+                  href="https://lstamenkovic.github.io/Starfetch-VueJS/"
+                  target="_blank"
+                  >LIVE SITE</a
+                >
+                |
+                <a
+                  href="https://codeberg.org/lstamenkovic/starfetch"
+                  target="_blank"
+                  >SOURCE CODE</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-container">
+          <div class="project text-white">
+            <a
+              href="https://lstamenkovic.codeberg.page/bluetube"
+              target="_blank"
+              ><img src="images/bluetube.png" alt=""
+            /></a>
+            <div>
+              <h4 class="title">BLUETUBE</h4>
+              <span class="desc">
+                Responsive receration of the YouTube's landing page
+              </span>
+              <span class="made_with">
+                MADE WITH <br />
+                <b class="nf nf-dev-html5"></b>
+                <b class="nf nf-dev-css3"></b>
+                <b class="nf nf-dev-javascript"></b>
+              </span>
+              <span class="buttons">
+                <a
+                  href="https://lstamenkovic.codeberg.page/bluetube"
+                  target="_blank"
+                  >LIVE SITE</a
+                >
+                |
+                <a
+                  href="https://codeberg.org/lstamenkovic/bluetube"
+                  target="_blank"
+                  >SOURCE CODE</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-container">
+          <div class="project text-white">
+            <a
+              href="https://lstamenkovic.codeberg.page/portfolio"
+              target="_blank"
+              ><img src="images/portfolio.png" alt=""
+            /></a>
+            <div>
+              <h4 class="title">PORTFOLIO</h4>
+              <span class="desc"> Projects summary page </span>
+              <span class="made_with">
+                MADE WITH <br />
+                <b class="nf nf-dev-html5"></b>
+                <b class="nf nf-dev-css3"></b>
+              </span>
+              <span class="buttons">
+                <a
+                  href="https://lstamenkovic.codeberg.page/portfolio"
+                  target="_blank"
+                  >LIVE SITE</a
+                >
+                <span>|</span>
+                <a
+                  href="https://codeberg.org/lstamenkovic/portfolio"
+                  target="_blank"
+                  >SOURCE CODE</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-container">
+          <div class="project text-white">
+            <img src="images/website.png" alt="" />
+            <div>
+              <h4 class="title">THIS WEBSITE</h4>
+              <span class="desc"> </span>
+              <span class="made_with">
+                MADE WITH <br />
+                <b class="nf nf-dev-html5"></b>
+                <b class="nf nf-dev-sass"></b>
+              </span>
+              <span class="buttons">
+                <a
+                  href="https://codeberg.org/lstamenkovic/personal-website"
+                  target="_blank"
+                  >SOURCE CODE</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="black-separator">
+        <svg
+          id=""
+          preserveAspectRatio="xMidYMax meet"
+          class="svg-separator sep3"
+          viewBox="0 0 1600 100"
+          style="display: block"
+          data-height="100"
+        >
+          <path
+            class="first"
+            style="opacity: 1"
+            d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"
+          ></path>
+          <path
+            class="second"
+            style="opacity: 1"
+            d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"
+          ></path>
+          <path
+            class="third"
+            style=""
+            d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"
+          ></path>
+        </svg>
+        <div class="contact-section">
+          <h2 class="section_headings text-purple">Get in touch</h2>
+          <h3 class="text-purple">I'm open for hire.<span></span></h3>
+          <h3 class="text-purple">
+            If you have any questions about me or my projects.
+          </h3>
+          <h3 class="text-purple">Please send me a message</h3>
+          <!-- <h3 class="text-white">lstamenkovic13@protonmail.com</h3> -->
+          <h3 class="text-white"><a href="mailto:lstamenkovic13@protonmail.com">lstamenkovic13@protonmail.com</a></h3>
+          <span class="contact-container">
+            <a
+              class="text-white"
+              href="https://draculatheme.com/"
+              target="_blank"
+              ><i class="ti ti-bat"></i
+            ></a>
+            <a
+              class="text-white"
+              href="https://codepen.io/lstamenkovic"
+              target="_blank"
+              ><i class="ti ti-brand-codepen"></i
+            ></a>
+            <a
+              class="text-white"
+              href="https://codeberg.org/lstamenkovic"
+              target="_blank"
+              ><i class="ti ti-code"></i
+            ></a>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer class="text-white">
+      <span>Designed and developed by Myself.</span>
+      <br />
+      <span class="credits" onclick="openCredits()">Special Thanks</span>
+      <div id="mentions" class="mentions">
+        <b class="nf nf-fa-close text-black" onclick="closeCredits()"></b>
+        <div class="nav_mentions text-pink">
+          <span>Made possible because of these people:</span>
+          <ul>
+            <li>
+              <a
+                href="https://ui.draculatheme.com/"
+                class="hvr-underline-from-center"
+                >Dracula UI by Zeno Rocha</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://heropatterns.com/"
+                class="hvr-underline-from-center"
+                >Hero Patterns by Steve Schoger</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://typeof.net/Iosevka/"
+                class="hvr-underline-from-center"
+                >Iosevka Font by Belleve Invis</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/simeydotme/pen/rVqrrN"
+                class="hvr-underline-from-center"
+                >Dashed Divider by Simon Goellner</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/jamestrenda/pen/WNNNvvR"
+                class="hvr-underline-from-center"
+                >Corner Frames by @jamestrenda</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.nerdfonts.com/"
+                class="hvr-underline-from-center"
+                >Nerd Fonts Icons by Ryan L McIntyre</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://ianlunn.github.io/Hover/"
+                class="hvr-underline-from-center"
+                >Hover.css by Ian Lunn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/emared/pen/gWGBLR"
+                class="hvr-underline-from-center"
+                >Row separator by @emared</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
       }
-    }
 
-    function hamAnimate4f(x) {
-      x.classList.toggle("open4f");
-      document
-        .getElementById("mobile_nav")
-        .classList.toggle("overlay_opened");
-    }
+      function hamAnimate4f(x) {
+        x.classList.toggle("open4f");
+        document
+          .getElementById("mobile_nav")
+          .classList.toggle("overlay_opened");
+      }
 
-    function closeMobileNav() {
-      document.getElementById("ham_button").classList.remove("open4f");
-      document
-        .getElementById("mobile_nav")
-        .classList.remove("overlay_opened");
-    }
+      function closeMobileNav() {
+        document.getElementById("ham_button").classList.remove("open4f");
+        document
+          .getElementById("mobile_nav")
+          .classList.remove("overlay_opened");
+      }
 
-    function openCredits() {
-      document.getElementById("mentions").classList.add("mentions_opened");
-    }
+      function openCredits() {
+        document.getElementById("mentions").classList.add("mentions_opened");
+      }
 
-    function closeCredits() {
-      document.getElementById("mentions").classList.remove("mentions_opened");
-    }
-  </script>
-</body>
-
+      function closeCredits() {
+        document.getElementById("mentions").classList.remove("mentions_opened");
+      }
+    </script>
+  </body>
 </html>
