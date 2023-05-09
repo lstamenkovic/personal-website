@@ -1,0 +1,63 @@
+#about {
+  background: var(--black);
+  p {
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    --lenght: 60px;
+    --width: 55px;
+    // border: 3px solid var(--purple);
+    box-shadow: calc(var(--lenght) * -1) calc(var(--lenght) * -1) 0
+        calc(var(--width) * -1) var(--purple),
+      var(--lenght) var(--lenght) 0 calc(var(--width) * -1) var(--purple);
+
+    margin: 10px auto 40px auto;
+  }
+  span {
+    align-self: center;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.icon_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 500px;
+}
+
+.icons {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icons b {
+  margin-bottom: 10px;
+}
+
+.icons span {
+  font-size: 1.1rem;
+  font-family: nerd;
+}
+
+.gnu-linux {
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gnu-linux .plus {
+  font-size: 2rem;
+  margin: 0 5px 0 10px;
+}

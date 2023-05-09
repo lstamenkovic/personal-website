@@ -1,0 +1,32 @@
+#ham_button {
+  visibility: visible;
+  background: var(--black);
+}
+
+.section_headings {
+  text-align: center;
+  font-size: 3rem;
+  max-width: 299px;
+  margin: 0 auto;
+}
+
+.section_headings_margin {
+  margin-top: 120px;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 10px 240px 10px;
+  margin: 0;
+  position: relative;
+}
+
+section:last-child {
+  min-height: 75vh;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 600px;
+}

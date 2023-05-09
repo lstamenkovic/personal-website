@@ -1,0 +1,57 @@
+@media only screen and (max-width: 450px) {
+  .icons {
+    font-size: 3rem;
+  }
+
+  .icons span {
+    font-size: 0.95rem;
+  }
+
+  .icon_grid {
+    gap: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #navbar {
+    display: flex;
+  }
+
+  #ham_button {
+    visibility: hidden;
+  }
+
+  section:first-child {
+    padding-top: 100px;
+  }
+  #about {
+    p {
+      flex-direction: row;
+    }
+    .info {
+      text-align: left;
+      margin-left: 40px;
+    }
+  }
+  .mentions {
+    a {
+      text-decoration: none;
+    }
+    li a {
+      font-size: 1.7rem;
+    }
+    span {
+      font-size: 2.2rem;
+    }
+  }
+ }
+
+@media only screen and (min-width: 640px) {
+  .hero_banner.small {
+    display: none;
+  }
+
+  .hero_banner.big {
+    display: block;
+  }
+}

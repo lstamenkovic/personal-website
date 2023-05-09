@@ -1,0 +1,52 @@
+.overlay {
+  transform: translateY(-100%);
+  height: 100%;
+  /* height: 0; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  background: var(--red);
+}
+
+.overlay_opened {
+  transform: translateY(0);
+  /* height: 100%; */
+}
+
+.nav_main {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 20px 0;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: block;
+  color: var(--black);
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.overlay p,
+.overlay li a {
+  font-size: 24px;
+  /* font-size: 1.3rem; */
+  font-weight: bold;
+}
+
+
+.overlay_from_section {
+  display: flex;
+  flex-direction: row;
+}

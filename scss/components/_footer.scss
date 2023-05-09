@@ -1,0 +1,17 @@
+footer {
+  margin-bottom: 50px;
+  background: var(--black);
+}
+
+.credits {
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+.credits:hover {
+  color: var(--pink);
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+}
+

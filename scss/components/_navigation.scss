@@ -1,0 +1,43 @@
+.logo {
+  margin: 15px;
+}
+
+#navbar {
+  display: none;
+  background: var(--black);
+  justify-content: space-between;
+  height: 75px;
+  font-size: 1.5rem;
+  border-bottom: 3px solid var(--purple);
+}
+
+#navbar ul {
+  list-style-type: none;
+  background-color: var(--black);
+  align-self: center;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: var(--purple);
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

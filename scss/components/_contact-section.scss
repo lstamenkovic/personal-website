@@ -1,0 +1,38 @@
+#contact {
+  background: var(--black);
+}
+
+.contact-section {
+  margin: 0 auto;
+  max-width: 600px;
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 35px auto;
+  }
+
+  & h3:nth-child(5) {
+    font-size: 1.4rem;
+    font-weight: 200;
+    width: 300px;
+    border-bottom: 2px solid var(--white);
+  }
+}
+
+.contact-container {
+  padding: 15px;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--black);
+
+  & i:hover {
+    color: var(--purple);
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+  }
+}

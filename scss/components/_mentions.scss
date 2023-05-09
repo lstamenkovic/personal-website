@@ -1,0 +1,55 @@
+.mentions {
+  transform: translateY(200%);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.4s;
+  background: var(--cyan);
+}
+
+.mentions_opened {
+  transform: translateY(0);
+}
+
+.nav_mentions {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentions a {
+  padding: 20px 0;
+  margin-left: 10px;
+  text-decoration: underline;
+  transition: 0.3s;
+  display: block;
+  color: var(--black);
+}
+
+.mentions li a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.mentions span {
+  margin: 60px 0 30px 0;
+  font-size: 2rem;
+}
+
+.nf-fa-close {
+  display: block;
+  font-size: 4rem;
+  position: fixed;
+  cursor: pointer;
+
+  top: 10px;
+  right: 30px;
+}

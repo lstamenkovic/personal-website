@@ -1,0 +1,43 @@
+.hvr-sweep-to-top:before {
+  z-index: -1; /* main.css */
+}
+
+.hr:before {
+  z-index: 1; /* separator.css */
+}
+
+.hr.black:before {
+  z-index: 1; /* separator.css */
+}
+
+.hr.anim:before {
+  z-index: 1; /* separator.css */
+}
+
+.svg-separator {
+  z-index: 2; /* separator.css */
+}
+
+h1 {
+  z-index: 2; /* main.css */
+}
+
+#navbar {
+  z-index: 3; /* main.css */
+}
+
+.overlay {
+  z-index: 3; /* overla.css */
+}
+.ham4 {
+  z-index: 4; /* hamburger.css */
+}
+.menu-button {
+  z-index: 4; /* hamburger.css */
+}
+.mentions {
+  z-index: 5; /* mentions.css */
+}
+.nf-fa-close {
+  z-index: 5; /* mentions.css */
+}

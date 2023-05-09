@@ -1,0 +1,81 @@
+.hr {
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
+}
+.hr.border_like {
+  padding: 15px 0;
+  margin-bottom: 45px;
+}
+.hr:after, .hr:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 50%;
+  left: 0;
+}
+.hr:before {
+  background: linear-gradient(90deg, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%);
+  background-size: 15px;
+  background-position: center;
+}
+.hr:after {
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  background: linear-gradient(to right, #62efab 5%, #f2ea7d 15%, #f2ea7d 25%, #ff8797 35%, #ff8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+  background-size: 200%;
+  background-position: 0%;
+  animation: bar 15s linear infinite;
+}
+.hr.purple:after {
+  background: var(--purple);
+  background-size: 200%;
+  background-position: 0%;
+}
+.hr.black:before {
+  background: linear-gradient(90deg, var(--purple) 0%, var(--purple) 50%, transparent 50%, transparent 100%);
+  background-size: 15px;
+  background-position: center;
+}
+.hr.black:after {
+  background: var(--black);
+  background-size: 200%;
+  background-position: 0%;
+}
+@keyframes bar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.hr.anim:before {
+  background: linear-gradient(90deg, var(--black) 0%, var(--black) 5%, transparent 5%, transparent 10%, var(--black) 10%, var(--black) 15%, transparent 15%, transparent 20%, var(--black) 20%, var(--black) 25%, transparent 25%, transparent 30%, var(--black) 30%, var(--black) 35%, transparent 35%, transparent 40%, var(--black) 40%, var(--black) 45%, transparent 45%, transparent 50%, var(--black) 50%, var(--black) 55%, transparent 55%, transparent 60%, var(--black) 60%, var(--black) 65%, transparent 65%, transparent 70%, var(--black) 70%, var(--black) 75%, transparent 75%, transparent 80%, var(--black) 80%, var(--black) 85%, transparent 85%, transparent 90%, var(--black) 90%, var(--black) 95%, transparent 95%, transparent 100%);
+  background-size: 150px;
+  background-position: center;
+  animation: bar 120s linear infinite;
+}
+.hr.anim:hover:before {
+  animation-duration: 20s;
+}
+.hr.anim:hover:after {
+  animation-duration: 2s;
+}
+
+.hr_svg {
+  margin: 10px auto 50px auto;
+  text-align: center;
+}
+
+.hr_svg svg {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  height: 45px;
+  fill: var(--purple);
+}
