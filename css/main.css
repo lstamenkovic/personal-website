@@ -45570,6 +45570,12 @@ header {
   align-self: center;
 }
 
+.skill_n_tools {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -45800,6 +45806,13 @@ h1 {
   #about .info {
     text-align: left;
     margin-left: 40px;
+  }
+  .skill_n_tools {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .skills {
+    margin-right: 110px;
   }
   .mentions a {
     text-decoration: none;

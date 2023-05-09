@@ -21,6 +21,12 @@
   }
 }
 
+.skill_n_tools {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
