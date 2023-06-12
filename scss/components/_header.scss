@@ -35,19 +35,69 @@ header {
   padding: 20px;
 }
 
-.scroll_indicator {
+#scroll_button {
   width: 60px;
-  height: 60px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 70px;
   position: absolute;
   bottom: 5%;
-  border-radius: 50%;
-  color: var(--black);
-  background: var(--purple);
-  b {
-    transform: translateX(-5px);
+  background: var(--black);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.scroll_icon {
+  $size: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 8px;
+  width: $size;
+  // width: 14px;
+  height: calc($size * 2);
+  // height: 28px;
+  border: solid 2px var(--purple);
+  border-radius: calc($size / 2);
+  // border-radius: 7px;
+  &::after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc($size / 2.5);
+    height: calc($size / 2.5);
+    // top: 5px;
+    // left: 3px;
+    // width: 4px;
+    // height: 4px;
+    border-radius: 50%;
+    background: var(--purple);
+    content: " ";
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    -webkit-animation-duration: 1500ms;
+    animation-duration: 1500ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
 }

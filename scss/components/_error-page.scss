@@ -1,0 +1,25 @@
+.body_404 {
+  height: 100vh;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  color: var(--purple);
+}
+
+.error_404 {
+  font-size: clamp(0.9rem, 0.1828rem + 3.5862vw, 2.2rem);
+}
+
+.error_info {
+  font-size: 1.6rem;
+}
+
+.error_homepage_btn {
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  // border: .0625rem solid var(--purple);
+  border: 1px solid var(--purple);
+  padding: 1rem 2rem;
+}

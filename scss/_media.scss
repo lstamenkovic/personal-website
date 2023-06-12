@@ -62,3 +62,41 @@
     display: block;
   }
 }
+
+@media only screen and (min-width: 850px) {
+  .project img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .project,
+  .projects-container:nth-child(even) .project {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    div {
+      align-items: flex-start;
+      margin: 0;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+
+    .desc {
+      width: 80%;
+    }
+
+    .made_with {
+      b {
+        margin: 8px;
+      }
+    }
+
+    span,
+    h4 {
+      text-align: left;
+    }
+  }
+}

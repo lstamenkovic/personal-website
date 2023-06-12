@@ -31,6 +31,7 @@
 }
 
 #navbar li a:hover {
+  cursor: pointer;
   color: var(--purple);
   transition-timing-function: ease-in;
   transition-duration: 0.2s;

@@ -45491,23 +45491,63 @@ header {
   padding: 20px;
 }
 
-.scroll_indicator {
+#scroll_button {
   width: 60px;
-  height: 60px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 70px;
   position: absolute;
   bottom: 5%;
-  border-radius: 50%;
-  color: var(--black);
-  background: var(--purple);
+  background: var(--black);
 }
-.scroll_indicator b {
-  transform: translateX(-5px);
+#scroll_button:hover {
+  cursor: pointer;
 }
 
+.scroll_icon {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 8px;
+  width: 24px;
+  height: 48px;
+  border: solid 2px var(--purple);
+  border-radius: 12px;
+}
+.scroll_icon::after {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 9.6px;
+  height: 9.6px;
+  border-radius: 50%;
+  background: var(--purple);
+  content: " ";
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
 .logo {
   margin: 15px;
 }
@@ -45541,6 +45581,7 @@ header {
 }
 
 #navbar li a:hover {
+  cursor: pointer;
   color: var(--purple);
   transition-timing-function: ease-in;
   transition-duration: 0.2s;
@@ -45622,15 +45663,14 @@ header {
 }
 
 .projects-container {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto 120px auto;
 }
 
 .project {
   color: var(--black);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
 }
 .project .title {
   font-size: 2rem;
@@ -45665,12 +45705,27 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 20px;
-  padding-left: 10px;
+  margin-top: -7px;
+  margin-left: 20px;
 }
 .project span,
 .project h4 {
   text-align: left;
+}
+
+.projects-container:nth-child(even) .project {
+  flex-direction: row-reverse;
+}
+.projects-container:nth-child(even) .project div {
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.projects-container:nth-child(even) .project .made_with b:last-child {
+  margin-right: 15px;
+}
+.projects-container:nth-child(even) .project span,
+.projects-container:nth-child(even) .project h4 {
+  text-align: right;
 }
 
 #contact {
@@ -45729,6 +45784,30 @@ footer {
   cursor: pointer;
   transition-timing-function: ease-in;
   transition-duration: 0.2s;
+}
+
+.body_404 {
+  height: 100vh;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+}
+
+.error_404 {
+  font-size: clamp(0.9rem, 0.1828rem + 3.5862vw, 2.2rem);
+}
+
+.error_info {
+  font-size: 1.6rem;
+}
+
+.error_homepage_btn {
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--purple);
+  padding: 1rem 2rem;
 }
 
 .hvr-sweep-to-top:before {
@@ -45832,5 +45911,40 @@ h1 {
     display: block;
   }
 }
+@media only screen and (min-width: 850px) {
+  .project img {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .project,
+  .projects-container:nth-child(even) .project {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .project div,
+  .projects-container:nth-child(even) .project div {
+    align-items: flex-start;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .project .desc,
+  .projects-container:nth-child(even) .project .desc {
+    width: 80%;
+  }
+  .project .made_with b,
+  .projects-container:nth-child(even) .project .made_with b {
+    margin: 8px;
+  }
+  .project span,
+  .project h4,
+  .projects-container:nth-child(even) .project span,
+  .projects-container:nth-child(even) .project h4 {
+    text-align: left;
+  }
+}
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
