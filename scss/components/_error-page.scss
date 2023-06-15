@@ -16,10 +16,18 @@
 }
 
 .error_homepage_btn {
+  margin-left: 30px;
   margin-top: 2rem;
   display: inline-block;
   text-decoration: none;
-  // border: .0625rem solid var(--purple);
-  border: 1px solid var(--purple);
+  border: 2px solid var(--purple);
   padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
+
+.--fill {
+  background-color: var(--purple);
+  color: var(--black);
+}
+

@@ -41,17 +41,21 @@ ul {
   list-style-type: none;
 }
 
-:root {
-  --black: #282a36;
+/* dracula is default theme */
+.dracula {
   --grey: #44475a;
-  --white: #f8f8f2;
-  --cyan: #8be9fd;
   --green: #50fa7b;
   --orange: #ffb86c;
   --pink: #ff79c6;
-  --purple: #bd93f9;
   --red: #ff5555;
   --yellow: #f1fa8c;
+  --cyan: #8be9fd;
+  --black: #191a21;
+  --purple: #bd93f9;
+  --white: #f8f8f2;
+}
+
+:root {
   font-size: 14px;
 }
 
@@ -67,7 +71,7 @@ ul {
 
 html,
 body {
-  background: var(--black);
+  background: var(--black) !important;
 }
 
 .text-white {
@@ -45459,7 +45463,7 @@ header {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #282a36;
+  background: var(--black);
   background-image: url("../images/circuit-board.svg");
   display: flex;
   justify-content: center;
@@ -45467,7 +45471,7 @@ header {
 }
 
 .hero_banner {
-  color: #bd93f9;
+  color: var(--purple);
   text-align: left;
   padding: 15px;
   line-height: normal;
@@ -45803,11 +45807,19 @@ footer {
 }
 
 .error_homepage_btn {
+  margin-left: 30px;
   margin-top: 2rem;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid var(--purple);
+  border: 2px solid var(--purple);
   padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.--fill {
+  background-color: var(--purple);
+  color: var(--black);
 }
 
 .hvr-sweep-to-top:before {
@@ -45828,10 +45840,6 @@ footer {
 
 .svg-separator {
   z-index: 2; /* separator.css */
-}
-
-h1 {
-  z-index: 2; /* main.css */
 }
 
 #navbar {
