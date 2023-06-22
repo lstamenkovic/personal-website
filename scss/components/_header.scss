@@ -4,13 +4,14 @@ header {
   width: 100%;
   background: var(--black);
   background-image: url("../images/circuit-board.svg");
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero_banner {
+  position: relative;
   color: var(--purple);
   text-align: left;
   padding: 15px;
@@ -18,8 +19,41 @@ header {
   background: var(--black);
 }
 
-.hero_banner span:first-child {
-  border-bottom: 5px solid var(--purple);
+.hero_name,
+.hero_developer {
+  display: inline-block;
+}
+
+.hero_split {
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  margin-bottom: 0px;
+  padding: 2px 0;
+}
+.hero_split.border_like {
+  padding: 15px 0;
+  margin-bottom: 45px;
+}
+.hero_split:after, .hero_split:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 50%;
+  left: 0;
+}
+.hero_split:before {
+  background: linear-gradient(90deg, var(--black) 0%, var(--black) 50%, transparent 50%, transparent 100%);
+  background-size: 15px;
+  background-position: center;
+}
+ 
+.hero_split:after {
+  background: var(--purple);
+  background-size: 200%;
+  background-position: 0%;
 }
 
 .hero_banner.small {

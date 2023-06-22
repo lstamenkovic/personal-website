@@ -1,0 +1,67 @@
+.hero_banner {
+  animation: fadeInUp 800ms;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero_name,
+.hero_developer {
+  opacity: 0;
+  animation: dropIn 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  // animation-delay: calc(var(--order) * 550ms);
+  /* animation-iteration-count: infinite; */
+}
+
+.hero_name {
+  animation-delay: 600ms;
+}
+
+.hero_developer {
+  animation-delay: 800ms;
+}
+
+@keyframes dropIn {
+  20% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  30%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero_split {
+  opacity: 0;
+  animation: dropIn2 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 400ms;
+}
+
+@keyframes dropIn2 {
+  20% {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+
+  30%,
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
