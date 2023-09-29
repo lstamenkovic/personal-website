@@ -37,6 +37,19 @@
   transition-duration: 0.2s;
 }
 
+#resume {
+  margin: 10px;
+  fill: var(--black);
+  stroke: var(--purple);
+  &:hover {
+    fill: var(--black);
+    stroke: var(--white);
+    cursor: pointer;
+  }
+}
+#resume_mobile_nav {
+  text-decoration: underline;
+}
 .sticky {
   position: fixed;
   top: 0;

@@ -45628,6 +45628,21 @@ header {
   transition-duration: 0.2s;
 }
 
+#resume {
+  margin: 10px;
+  fill: var(--black);
+  stroke: var(--purple);
+}
+#resume:hover {
+  fill: var(--black);
+  stroke: var(--white);
+  cursor: pointer;
+}
+
+#resume_mobile_nav {
+  text-decoration: underline;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -45810,6 +45825,10 @@ header {
   transition-duration: 0.2s;
 }
 
+#email {
+  text-decoration: underline;
+}
+
 footer {
   margin-bottom: 50px;
   background: var(--black);
@@ -45988,7 +46007,7 @@ footer {
   }
   #about .info {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 25px;
   }
   .skill_n_tools {
     flex-direction: row;

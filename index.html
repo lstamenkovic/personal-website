@@ -43,6 +43,11 @@
       <li>
         <a id="contact_button_mobile">Contact</a>
       </li>
+      <li>
+        <a id="resume_mobile_nav" href="Lazar Stamenkovic resume.pdf" target="_blank">
+          Resume
+        </a>
+      </li>
     </ul>
   </div>
   <nav id="navbar">
@@ -53,13 +58,26 @@
         <rect x="22%" y="14%" rx="0" ry="0" width="29%" height="6%" style="fill: var(--black); stroke: var(--black)" />
         <rect x="75%" y="68%" rx="0" ry="0" width="6%" height="19%" style="fill: var(--black); stroke: var(--black)" />
         <rect x="22%" y="81%" rx="0" ry="0" width="59%" height="6%" style="fill: var(--black); stroke: var(--black)" />
-      </svg></span>
+      </svg>
+    </span>
     <ul>
       <li><a id="about_button">ABOUT</a></li>
       <li><a id="projects_button">PROJECTS</a></li>
       <li><a id="contact_button">CONTACT</a></li>
     </ul>
-    <div></div>
+    <!-- style="fill: var(--black); stroke: var(--purple)" -->
+    <span>
+      <a href="Lazar Stamenkovic resume.pdf" target="_blank">
+        <svg id="resume" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="45"
+          height="45" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+          <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+          <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0"></path>
+          <path d="M13 11l1.5 6l1.5 -6"></path>
+        </svg>
+      </a>
+    </span>
   </nav>
 
   <main id="start">
@@ -70,23 +88,17 @@
       </h2>
 
       <p class="text-purple">
-        <img src="images/mugshot.png" alt="" width="250" />
-        <!-- <span class="info"> -->
-        <!--   Hi, I'm Lazar Stamenkovic, web developer form Europe. I like to -->
-        <!--   apply the "Less is more" philosophy in my work. Dark mode, open -->
-        <!--   source and DIY are the way to go. -->
-        <!--   <br /><br /> -->
-        <!--   Other than coding, I spend most of my time watching movies, -->
-        <!--   listening to music, reading or riding my bike. -->
-        <!-- </span> -->
+        <img src="images/mugshot.png" alt="" width="230" />
         <span class="info">
-          I am Lazar, a passionate web developer with a creative flair. My
-          expertise lies in crafting visually stunning and highly functional
-          websites that not only meet but exceed user expectations. With a
-          strong foundation in HTML, CSS, and JavaScript, I bring designs to
-          life and ensure seamless user experiences. My skills extend to
-          responsive web design, ensuring that websites look and perform
-          flawlessly on all devices.
+          I'm Lazar, a passionate web developer with a creative flair.
+          <br />
+          My expertise lies in crafting visually stunning and highly
+          functional websites that not only meet but exceed user expectations.
+          With a strong foundation in HTML, CSS, and JavaScript, I bring
+          designs to life and ensure seamless user experiences.
+          <br />
+          My skills extend to responsive web design, ensuring that websites
+          look and perform flawlessly on all devices.
         </span>
       </p>
       <div class="skill_n_tools">
@@ -302,7 +314,7 @@
         <h3 class="text-purple">Please send me a message</h3>
         <!-- <h3 class="text-white">lstamenkovic13@protonmail.com</h3> -->
         <h3 class="text-white">
-          <a href="mailto:lstamenkovic13@protonmail.com">lstamenkovic13@protonmail.com</a>
+          <a href="mailto:lstamenkovic13@protonmail.com" id="email">lstamenkovic13@protonmail.com</a>
         </h3>
         <span class="contact-container">
           <a class="text-white" href="https://draculatheme.com/" target="_blank"><i class="ti ti-bat"></i></a>
@@ -355,7 +367,6 @@
       </div>
     </div>
   </footer>
-  <div class="proba"></div>
   <script>
     window.onscroll = function () {
       myFunction();
